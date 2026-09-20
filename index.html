@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>儿科刷题档案 · 图文增强版</title>
+<title>儿科刷题档案 · Q1–Q6</title>
 <style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;background:#f3f7fa;color:#25364a;padding:3rem;line-height:1.8}a{color:#235fcb}</style>
 </head>
 <body>
@@ -12,12 +12,12 @@ fetch('./bank.html').then(response => {
   if (!response.ok) throw new Error('无法加载题库文件：HTTP ' + response.status);
   return response.text();
 }).then(html => {
-  const enhanced = html.replace(/<\/head>/i, '<script defer src="./visuals.js"></' + 'script></head>');
+  const enhanced = html.replace(/<\/head>/i, '<script defer src="./visuals.js"></' + 'script></head>').replace(/<\/body>/i, '<script src="./q6.js"></' + 'script></body>');
   document.open();
   document.write(enhanced);
   document.close();
 }).catch(error => {
-  document.body.innerHTML = '<h1>网页加载暂时失败</h1><p>请刷新重试，或<a href="./bank.html">打开完整原版题库</a>。</p>';
+  document.body.innerHTML = '<h1>网页加载暂时失败</h1><p>请刷新重试，或<a href="./bank.html">打开完整原版题库（Q1–Q5）</a>。</p>';
   console.error(error);
 });
 </script>
