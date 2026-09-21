@@ -2,10 +2,11 @@
   "schemaVersion": 1,
   "description": "Incremental question modules. Archived question files are preserved. Supplementary notes are separate additive modules.",
   "archivedQuestionRange": "Q1–Q11",
-  "nextQuestionId": 14,
+  "nextQuestionId": 15,
   "modules": [
     "questions/q012.js",
     "questions/q013.js",
-    "questions/q013-supplement.js"
+    "questions/q013-supplement.js",
+    "questions/q014.js"
   ]
 }
