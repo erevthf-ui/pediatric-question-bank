@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>儿科刷题档案 · Q1–Q11</title>
+<title>儿科刷题档案</title>
 <style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;background:#f3f7fa;color:#25364a;padding:3rem;line-height:1.8}a{color:#235fcb}</style>
 </head>
 <body>
@@ -13,7 +13,7 @@ fetch('./bank.html').then(response => {
   return response.text();
 }).then(html => {
   const enhanced = html.replace(/<\/head>/i, '<script defer src="./visuals.js"></' + 'script></head>')
-    .replace(/<\/body>/i, '<script src="./q6.js"></' + 'script><script src="./q7-q11.js"></' + 'script></body>');
+    .replace(/<\/body>/i, '<script src="./q6.js"></' + 'script><script src="./q7-q11.js"></' + 'script><script src="./question-loader.js"></' + 'script></body>');
   document.open();
   document.write(enhanced);
   document.close();
