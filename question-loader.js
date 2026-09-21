@@ -1,4 +1,4 @@
-/* Incremental question loader: archived Q1–Q11 files remain untouched. */
+/* Incremental question loader: archived question files remain untouched; supplements can be appended separately. */
 (() => {
   'use strict';
   const loadScript = (path) => new Promise((resolve, reject) => {
@@ -16,7 +16,7 @@
       if (!Array.isArray(catalog.modules)) throw new Error('Invalid question catalog');
       const seen = new Set();
       for (const path of catalog.modules) {
-        if (typeof path !== 'string' || !/^questions\/q\d{3,4}\.js$/.test(path)) throw new Error('Invalid module path');
+        if (typeof path !== 'string' || !/^questions\/q\d{3,4}(?:-supplement)?\.js$/.test(path)) throw new Error('Invalid module path');
         if (seen.has(path)) throw new Error('Duplicate module path: ' + path);
         seen.add(path);
         await loadScript(path);
