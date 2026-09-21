@@ -2,6 +2,8 @@
   "schemaVersion": 1,
   "description": "Incremental question modules. Q1–Q5 remain in bank.html; Q6–Q11 remain in existing legacy scripts. Do not modify archived question files when adding new questions.",
   "archivedQuestionRange": "Q1–Q11",
-  "nextQuestionId": 12,
-  "modules": []
+  "nextQuestionId": 13,
+  "modules": [
+    "questions/q012.js"
+  ]
 }
