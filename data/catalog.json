@@ -1,12 +1,19 @@
 {
   "schemaVersion": 1,
-  "description": "Incremental question modules. Archived question files are preserved. Supplementary notes are separate additive modules.",
+  "description": "Incremental question modules. Archived question files are preserved. Supplementary notes are separate additive modules. Original source screenshots may be absent from public repository; diagrams are original study aids.",
   "archivedQuestionRange": "Q1–Q11",
-  "nextQuestionId": 15,
+  "nextQuestionId": 22,
   "modules": [
     "questions/q012.js",
     "questions/q013.js",
     "questions/q013-supplement.js",
-    "questions/q014.js"
+    "questions/q014.js",
+    "questions/q015.js",
+    "questions/q016.js",
+    "questions/q017.js",
+    "questions/q018.js",
+    "questions/q019.js",
+    "questions/q020.js",
+    "questions/q021.js"
   ]
 }
