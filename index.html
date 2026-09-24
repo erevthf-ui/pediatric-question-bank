@@ -13,7 +13,7 @@ fetch('./bank.html').then(response => {
   return response.text();
 }).then(html => {
   const enhanced = html.replace(/<\/head>/i, '<script defer src="./visuals.js"></' + 'script></head>')
-    .replace(/<\/body>/i, '<script src="./q6.js"></' + 'script><script src="./q7-q11.js"></' + 'script><script src="./question-loader.js"></' + 'script></body>');
+    .replace(/<\/body>/i, '<script src="./q6.js"></' + 'script><script src="./q7-q11.js"></' + 'script><script src="./question-loader.js"></' + 'script><script src="./swipe-nav.js"></' + 'script></body>');
   document.open();
   document.write(enhanced);
   document.close();
